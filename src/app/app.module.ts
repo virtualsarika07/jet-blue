@@ -3,22 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AdminModule } from './admin/admin.module';
-import { HomeComponent } from './home/home.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlightsComponent } from './flights/flights.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    FlightsComponent,
     
   ],
+  bootstrap: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AdminModule
+   
+    BrowserAnimationsModule
   ],
+  exports:[  ],
   providers: [],
-  bootstrap: [AppComponent]
+ 
 })
 export class AppModule { }
