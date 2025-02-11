@@ -1,11 +1,27 @@
-.main-container{
-    height:100%;
-    width:100%;
-    padding:20px;
-    h1 {
-        border: 2px solid grey;
-        color:green;
-       
-    }
+.main-container {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
 
+  .heading-container {
+    border: 2px solid grey;
+    padding: 10px;
+    .welcome {
+        color: green;
+        text-align: center;
+        padding: 10px;
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .highlight-text {
+        color: lightslategray;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: italic;
+        padding-top: 3px;
+        
+      }
+  }
+ 
 }
