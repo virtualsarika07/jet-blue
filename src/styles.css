@@ -2,3 +2,13 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-tooltip.custom-tooltip {
+    background: white !important;  
+    color: black !important;      
+    border: 1px solid lightgray !important; 
+    padding: 8px !important;
+    font-size: 14px !important;
+    text-align: left !important;
+    white-space: pre-line; 
+    display: block;
+  }

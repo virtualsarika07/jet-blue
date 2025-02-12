@@ -1,1 +1,13 @@
-<p>flight-list works!</p>
+<mat-card *ngFor="let flight of flights" class="flight-card">
+    <mat-card-title>{{flight.name}}
+        <!-- <span matTooltip="Previous flight status: On Time" matTooltipClass="custom-tooltip">
+            Flight ID: {{ flight.id }}
+     </span> -->
+  
+     <span appTooltip="On Time">{{flight.id}}</span>
+
+
+    
+    </mat-card-title>
+    
+</mat-card>
