@@ -13,6 +13,7 @@
         font-size: 40px;
         font-weight: 600;
       }
+
       .highlight-text {
         color: lightslategray;
         text-align: center;
@@ -22,6 +23,9 @@
         padding-top: 3px;
         
       }
+  }
+  .flight-list{
+    display:flex;
   }
  
 }

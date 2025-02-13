@@ -40,7 +40,7 @@ export class TooltipDirective {
 
     // Popper.js instance with LEFT placement & arrow modifier
     this.popperInstance = createPopper(this.el.nativeElement, this.tooltipElement, {
-      placement: 'left',
+      placement: 'top',
       modifiers: [
         { name: 'offset', options: { offset: [8, 10] } }, // Adjust spacing
         { name: 'arrow', options: { element: this.arrowElement } } // ✅ Arrow modifier

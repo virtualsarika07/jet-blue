@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import tippy from 'tippy.js';
 
 
@@ -7,7 +7,7 @@ import tippy from 'tippy.js';
 
   templateUrl: './flight-list.component.html',
   styleUrls: ['./flight-list.component.css'],
-  encapsulation: ViewEncapsulation.None,
+ 
 
 })
 export class FlightListComponent {
