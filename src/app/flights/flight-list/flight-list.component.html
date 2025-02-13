@@ -1,22 +1,22 @@
 <mat-card *ngFor="let flight of flights" class="flight-card">
-  <mat-card-title
-    >{{ flight.name }}
+    <mat-card-title>{{flight.name}}
+   
+  <!-- popper -->
+     <span appTooltip="On Time">{{flight.id}}</span> 
+     <!-- mat-tooltip -->
+<div class="tooltip-container"
+     [matTooltip]="'Previous flight status &#10; On Time'"
+     matTooltipPosition="left"
+     matTooltipClass="custom-tooltip">
+  <span class="tooltip-trigger">Hover me</span>
+</div>
+<!-- general -->
+<div class="tooltip">general
+    <span class="tooltiptext">Tooltip text</span>
+    </div>
 
-    <!-- popper -->
-    <span appTooltip="On Time">{{ flight.id }}</span>
-    <!-- mat-tooltip -->
-    <div
-      class="tooltip-container"
-      [matTooltip]="'Previous flight status &#10; On Time'"
-      matTooltipPosition="left"
-      matTooltipClass="custom-tooltip"
-    >
-      <span class="tooltip-trigger">Hover me</span>
-    </div>
-    <!-- general -->
-    <div class="tooltip">
-      general
-      <span class="tooltiptext">Tooltip text</span>
-    </div>
-  </mat-card-title>
+
+    
+    </mat-card-title>
+    
 </mat-card>
